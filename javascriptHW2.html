@@ -25,6 +25,22 @@ function Hello(nameTwo){
   return('Hello' + ' ' + (nameTwo));
 }
 console.log('Hello, ' + (nameTwo));
+
+function gameResults(home, away) {
+  if(home > away) {
+    console.log('The home team won');
+  }
+  else if(home < away) {
+    console.log('The away team won');
+  }
+  else {
+    console.log('The game ended in a tie!');
+  }
+}
+
+gameResults(5,4);
+gameResults(4,5);
+gameResults(5,5);
 </script>
 </body>
 </html>
